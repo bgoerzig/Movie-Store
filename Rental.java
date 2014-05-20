@@ -13,6 +13,15 @@ class Rental {
     public Movie getMovie() {
         return movie;
     }
+    //extracted method from class Customer
+    int getFrequentRenterPoints() {
+    	if ((getMovie().getPriceCode() == Movie.NEW_RELEASE) &&
+    	getDaysRented() > 1)
+    		return 2;
+    	else
+    		return 1;
+    }
+    
     // move method in correct class
 	double getCharge() {
 		double result = 0;
