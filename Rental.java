@@ -7,6 +7,7 @@ class Rental {
         movie = newmovie;
         daysRented = newdaysRented;
     }
+    
     public int getDaysRented() {
         return daysRented;
     }
